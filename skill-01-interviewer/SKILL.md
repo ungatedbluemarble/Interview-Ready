@@ -87,7 +87,7 @@ Apply any corrections, then confirm the profile is saved.
 ## Profile Output
 
 After intake is complete, construct the profile object per the schema defined in:
-`shared/user-profile-schema.md`
+`/references/user-profile-schema.md`
 
 Inform the user:
 > "Your profile is ready. You can continue in this session and your information will carry forward automatically. If you want to save your profile to use in a future session, say 'save my profile' and I will export it as a file you can upload later."

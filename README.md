@@ -185,6 +185,12 @@ If you are outside the United States, the skill runs a country and city-specific
 
 ---
 
+## A Note on the Shared Profile Schema
+
+The user profile schema (`user-profile-schema.md`) is intentionally duplicated into the `references/` folder of each skill. This is required because each skill is installed as a separate zip file in Claude and cannot access files outside its own folder. When the schema changes, update all four copies. The `shared/` folder at the repo root is the source of truth , copy from there.
+
+---
+
 ## A Note on LinkedIn
 
 LinkedIn blocks automated content fetching. When this package researches a hiring manager, it extracts their name and company from the URL you provide and runs web search queries instead, synthesizing results from public sources: posts, articles, events, and announcements. If minimal public data exists for an interviewer, the skill flags it and focuses on role-level signals instead.
