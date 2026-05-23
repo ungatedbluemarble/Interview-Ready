@@ -297,14 +297,29 @@ Claude will read your profile and summarize where you stand across every pipelin
 
 **Compensation research**
 
-When preparing for offer negotiation, these sources provide current market data:
+When preparing for offer negotiation, Skill 04 automatically searches these sources and synthesizes them into a base, bonus, equity, and total compensation range for your specific role, level, and location. These sources are also listed so you can cross-reference independently.
 
 | Source | Best For |
 |---|---|
-| Levels.fyi | Verified compensation data for tech roles, especially engineering and product |
-| Glassdoor | Broad compensation ranges across industries, self-reported |
+| Levels.fyi | Verified total compensation data for technology roles, especially engineering and product |
+| Glassdoor | Broad cross-industry self-reported ranges. Note: skews toward base salary, may undercount total comp |
 | LinkedIn Salary | Role and location-specific ranges tied to real job postings |
-| Payscale | Detailed breakdown by experience, education, and geography |
-| Bureau of Labor Statistics (bls.gov) | Authoritative government data for US occupational wages |
+| Payscale | Detailed breakdown by experience, education level, and geography. Strong for non-technical roles |
+| Bureau of Labor Statistics (bls.gov) | Authoritative US government occupational wage data. Best for anchoring the low end of a range |
+| Dice | Technology and engineering roles. Strong for software, data, and infrastructure positions |
+| Built In | Startup and growth-stage company compensation. Covers equity and total comp packages |
+| Indeed Salary | High volume, broad coverage across industries. Best used as a cross-reference |
 
-Skill 04 will research compensation ranges for your target role during offer negotiation prep. These sources are listed so you can cross-reference independently.
+**Salary law research**
+
+Skill 04 also searches these authoritative sources for salary history and expectation ban laws in your jurisdiction before every recruiter screen prep. The result is cached and refreshed every 90 days automatically.
+
+| Source | Coverage |
+|---|---|
+| State labor department websites | Official state-level salary history and expectation ban laws |
+| National Conference of State Legislatures (ncsl.org) | Tracks salary history ban legislation by state, updated regularly |
+| U.S. Department of Labor (dol.gov) | Federal wage and hour guidance and pay equity resources |
+| EEOC (eeoc.gov) | Pay equity and employment discrimination law guidance |
+| Ballotpedia (ballotpedia.org) | Recent legislative changes and ballot measures by state |
+
+Laws change. The skill always directs you to your state Department of Labor to verify current status before an interview.
