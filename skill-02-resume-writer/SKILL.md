@@ -210,3 +210,15 @@ Do not assume the reason. Do not fill the gap with vague language before asking.
 - Treat a gap as inherently damaging. Many hiring managers are indifferent to gaps under 12 months and increasingly understand longer gaps too.
 
 **Verbal preparation.** After writing the resume, if a gap is present, flag to the user that it may prompt a recruiter question and offer to prepare a one-sentence verbal answer they can deliver without hesitation. The answer should be factual, forward-looking, and brief.
+
+---
+
+## LinkedIn Profile Optimization
+
+After delivering the resume and cover letter, offer to optimize the user's LinkedIn profile:
+
+> "Would you like me to optimize your LinkedIn profile to match your resume? A well-aligned profile significantly increases recruiter visibility, and I can rewrite your headline, about section, and experience entries to match the positioning we just built."
+
+If the user says yes, proceed using Claude's native capability. There is no separate reference file for this. Use the resume just produced as the source of truth for positioning, language, and tone. Key areas to address: headline (role title plus one differentiator, not just a job title), about section (first-person, three to four sentences, mirrors the resume summary), experience entries (aligned with resume bullets but written in LinkedIn's more conversational register), and skills section (prioritize skills that appear in the target job descriptions the user has shared).
+
+Do not replicate the resume verbatim. LinkedIn is a different surface with a different register. The resume is formal and document-structured. LinkedIn is more direct and human.

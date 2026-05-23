@@ -129,6 +129,11 @@ After JD evaluation, ask:
 
 Route to Skill 02, Skill 04, or Skill 05 based on the answer.
 
+If the user has identified specific companies or roles they want to pursue but has not yet applied or made contact, also offer:
+> "Would you like help with a networking outreach message? A well-written note to a connection at the company or a cold outreach to a hiring manager can open doors that the application alone will not."
+
+If the user says yes, proceed using Claude's native capability. Write the outreach message based on the specific company, role, and the user's background from the profile. Keep it concise: three to four sentences maximum. Lead with a genuine connection point or reason for reaching out, not a generic compliment. State clearly what the user is looking for and why this company specifically. End with a low-friction ask, not a demand for a meeting.
+
 ---
 
 ## Career Changer Handling
