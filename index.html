@@ -171,7 +171,7 @@
     display: flex;
     list-style: none;
     gap: 0;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     white-space: nowrap;
   }
@@ -189,7 +189,9 @@
 
   nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
-  main { max-width: 900px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+  main { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+
+  .table-wrap { overflow-x: auto; }
 
   section { margin-bottom: 4rem; }
 
@@ -551,7 +553,7 @@ cp -r interview-ready/skill-* ~/.claude/skills/</code></pre>
     <p>Skill 01 will onboard you, build your profile, and route you to the right skill based on what you need.</p>
 
     <h3>Skill Trigger Reference</h3>
-    <table>
+    <div class="table-wrap"><table>
       <thead><tr><th>What to say</th><th>Skill triggered</th></tr></thead>
       <tbody>
         <tr><td>"Start Interview Ready" / "I need help with my job search"</td><td>Skill 01: Interviewer</td></tr>
@@ -562,7 +564,7 @@ cp -r interview-ready/skill-* ~/.claude/skills/</code></pre>
         <tr><td>"Show me my pipeline" / "Where am I with my applications" / "Add this to my tracker"</td><td>Skill 06: Pipeline Dashboard</td></tr>
         <tr><td>"Show me my pipeline status" / "Where am I with my applications"</td><td>Skill 06: Pipeline Dashboard</td></tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h3>Bringing In Your Documents</h3>
     <p>You can feed your resume and other career documents from any source:</p>
@@ -589,7 +591,7 @@ cp -r interview-ready/skill-* ~/.claude/skills/</code></pre>
 
   <section id="documents">
     <h2>Document Outputs</h2>
-    <table>
+    <div class="table-wrap"><table>
       <thead><tr><th>Document</th><th>Skill</th><th>Format</th></tr></thead>
       <tbody>
         <tr><td>Resume</td><td>Skill 02</td><td>.docx (primary), PDF or plain text on request</td></tr>
@@ -603,7 +605,7 @@ cp -r interview-ready/skill-* ~/.claude/skills/</code></pre>
         <tr><td>Follow-Up Cadence Guide</td><td>Skill 04</td><td>Inline guidance, email templates by stage</td></tr>
         <tr><td>Resignation Handling Guide</td><td>Skill 04</td><td>Inline guidance, resignation letter template</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </section>
 
   <section id="session">
@@ -613,7 +615,7 @@ cp -r interview-ready/skill-* ~/.claude/skills/</code></pre>
   <p>Interview Ready is designed to be used across multiple sessions, not in one sitting. Each skill is token-intensive and running the full pipeline end to end in a single conversation will approach Claude's context limits.</p>
 
     <h3>Estimated Token Usage</h3>
-    <table>
+    <div class="table-wrap"><table>
       <thead><tr><th>Stage</th><th>Estimated Tokens</th></tr></thead>
       <tbody>
         <tr><td>Skill 01: Intake and profile build</td><td>2,000 to 4,000</td></tr>
@@ -626,7 +628,7 @@ cp -r interview-ready/skill-* ~/.claude/skills/</code></pre>
         <tr><td>Skill 05: Quiz mode session</td><td>3,000 to 6,000</td></tr>
         <tr><td>Skill 06: Pipeline dashboard and updates</td><td>1,000 to 2,000</td></tr>
       </tbody>
-    </table>
+    </table></div>
 
     <p>A complete end-to-end run consumes roughly <strong>35,000 to 55,000 tokens</strong>. Run one skill per session and save your profile after each one.</p>
 
@@ -645,7 +647,7 @@ cp -r interview-ready/skill-* ~/.claude/skills/</code></pre>
 
     <h3>Live Salary Law Search</h3>
     <p>Skill 04 includes a live salary law search that runs on first use and refreshes automatically every 90 days. When you reach the compensation section of any recruiter screen prep, the skill searches for current salary history and expectation ban laws in your state and city across five authoritative sources:</p>
-    <table>
+    <div class="table-wrap"><table>
       <thead><tr><th>Source</th><th>Coverage</th></tr></thead>
       <tbody>
         <tr><td>State labor department websites</td><td>Official state-level salary history and expectation ban laws</td></tr>
@@ -654,12 +656,12 @@ cp -r interview-ready/skill-* ~/.claude/skills/</code></pre>
         <tr><td>EEOC (eeoc.gov)</td><td>Pay equity and employment discrimination law guidance</td></tr>
         <tr><td>Ballotpedia (ballotpedia.org)</td><td>Recent legislative changes and ballot measures by state</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p>The result is always accompanied by a disclaimer directing you to your state Department of Labor to verify. Laws change. The skill makes this clear every time.</p>
 
     <h3>Live Compensation Benchmarking</h3>
     <p>For offer negotiation and recruiter screen prep, Skill 04 automatically searches eight sources and synthesizes them into a base, bonus, equity, and total compensation range for your specific role, level, and location:</p>
-    <table>
+    <div class="table-wrap"><table>
       <thead><tr><th>Source</th><th>Best For</th></tr></thead>
       <tbody>
         <tr><td>Levels.fyi</td><td>Verified total compensation data for technology roles</td></tr>
@@ -671,7 +673,7 @@ cp -r interview-ready/skill-* ~/.claude/skills/</code></pre>
         <tr><td>Built In</td><td>Startup and growth-stage company compensation</td></tr>
         <tr><td>Indeed Salary</td><td>High volume, broad cross-industry coverage</td></tr>
       </tbody>
-    </table>
+    </table></div>
 
     <div class="callout callout-warn">
       <strong>Disclaimer:</strong> Interview Ready is provided for informational purposes only and does not constitute legal, financial, or professional career advice. Compensation data, salary law guidance, and negotiation strategies are research aids, not legal or financial counsel. Use your own judgment and consult a qualified professional where appropriate.
@@ -681,14 +683,14 @@ cp -r interview-ready/skill-* ~/.claude/skills/</code></pre>
   <section id="connectors">
     <h2>Connected Services</h2>
     <p class="lead">Interview Ready can connect to your email, cloud storage, and calendar through Claude's connected apps. These are optional: everything works without them. During onboarding, Skill 01 asks whether you want to enable any of the following.</p>
-    <table>
+    <div class="table-wrap"><table>
       <thead><tr><th>Service</th><th>What it enables</th></tr></thead>
       <tbody>
         <tr><td>Gmail or Microsoft Outlook</td><td>Skill 06 checks your inbox for recruiter responses before rendering your pipeline dashboard. Status reflects what actually happened, not just what you manually logged.</td></tr>
         <tr><td>Google Drive, OneDrive, SharePoint, Dropbox, Box</td><td>Skills 02 and 03 can pull your resume or job descriptions directly from storage without requiring a file upload each time.</td></tr>
         <tr><td>Google Calendar or Outlook Calendar</td><td>Skill 06 reads scheduled interview dates from your calendar and surfaces them in the pipeline view automatically.</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <div class="callout">
       <p><strong>Recruiter email addresses</strong> are what make inbox checking work. When you run prep for any role (Skill 04), you will be prompted to share the recruiter's email if you have it. Once stored in your profile, Skill 06 uses it to find the right thread when checking your pipeline status.</p>
     </div>
@@ -700,7 +702,7 @@ cp -r interview-ready/skill-* ~/.claude/skills/</code></pre>
     <p>Interview Ready handles research, documents, and interview preparation. It does not replace a dedicated application tracker.</p>
 
     <h3>Application Tracking</h3>
-    <table>
+    <div class="table-wrap"><table>
       <thead><tr><th>Tool</th><th>Best For</th><th>URL</th></tr></thead>
       <tbody>
         <tr><td>Huntr</td><td>Dedicated job search tracker with Kanban board and contact management</td><td>huntr.com</td></tr>
@@ -709,7 +711,7 @@ cp -r interview-ready/skill-* ~/.claude/skills/</code></pre>
         <tr><td>Airtable</td><td>Spreadsheet-style tracker with filtering and views</td><td>airtable.com</td></tr>
         <tr><td>Google Sheets</td><td>No-frills option for full control</td><td>sheets.google.com</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p>None of these are affiliated with or required by this package.</p>
 
     <h3>Pipeline Dashboard</h3>
