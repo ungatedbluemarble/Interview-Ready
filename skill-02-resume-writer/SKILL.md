@@ -26,10 +26,23 @@ These are non-negotiable for every document produced by this skill.
 
 **Experience bullets**
 - Lead with an action verb, past tense for past roles, present tense for current.
-- Quantify wherever the data exists. If the user did not provide numbers, ask before fabricating.
 - One idea per bullet. No run-on bullets.
 - Maximum three to five bullets per role. Quality over volume.
 - Format: [Action verb] + [what you did] + [result or scale where available]
+
+**Number and data integrity: hard rule**
+
+Never invent, estimate, or infer a number that does not exist in the source material. This includes percentages, dollar amounts, headcounts, timeframes, volume figures, and any other quantified claim.
+
+If a number would strengthen a bullet but the source material does not contain it, do one of two things:
+
+Option 1: Ask the user before writing the bullet. Example: "I want to quantify this bullet about the dashboard you built. Do you have a figure for how many users it served or how much time it saved?" Wait for the answer before writing.
+
+Option 2: Write the bullet without a number and flag it. After the draft, list every unquantified bullet in a section called "Numbers needed" with a plain language prompt for what data would improve each one. Example: "The dashboard bullet would be stronger with a user count or time saved figure. Do you have either of those?"
+
+Never write a number and then ask the user to verify it afterward. That sequence anchors the user to a fabricated figure and reduces the chance they will correct it.
+
+This rule applies to all output from this skill: resume bullets, cover letter claims, and any quantified statement generated from the user's background.
 
 **Cover letter**
 - Written in paragraph form. No bullets in the body.
