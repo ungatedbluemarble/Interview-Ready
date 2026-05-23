@@ -25,6 +25,8 @@ assignees: ''
 - [ ] skill-04-interview-prep/assets
 - [ ] skill-05-mock-interviewer/references
 - [ ] skill-05-mock-interviewer/assets
+- [ ] skill-06-pipeline-dashboard/references
+- [ ] skill-06-pipeline-dashboard/assets
 
 **What does this file do?**
 Describe what the file contains, what problem it solves, and when Claude should load it.
