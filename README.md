@@ -58,7 +58,7 @@ In Settings → Capabilities, make sure **Code Execution** is turned on. Skills 
 
 Each skill is a separate folder inside the ZIP you downloaded. You need to upload them one at a time.
 
-For each of the six skill folders (`skill-01-interviewer`, `skill-02-resume-writer`, `skill-03-job-search`, `skill-04-interview-prep`, `skill-05-mock-interviewer`, `skill-06-pipeline-dashboard`):
+For each of the six skill folders (Interviewer, Resume Writer, Job Search Expert, Interview Prep, Mock Interviewer, Pipeline Dashboard):
 
 1. Create a new ZIP file containing just that one skill folder
 2. Click **Upload skill** in the Skills settings panel
@@ -102,7 +102,7 @@ mkdir -p ~/.claude/skills && \
 
 ## Usage
 
-Once installed, start with Skill 01. Everything else follows from there.
+Once installed, start with the Interviewer skill. Everything else follows from there.
 
 In any Claude session, say:
 
@@ -112,7 +112,7 @@ or
 
 > "I need help with my job search."
 
-Skill 01 will onboard you, build your profile, and route you to the right skill based on what you need.
+The Interviewer skill will onboard you, build your profile, and route you to the right skill based on what you need.
 
 ---
 
@@ -122,12 +122,12 @@ You can also go directly to any skill:
 
 | What to say | Skill triggered |
 |---|---|
-| "Start Interview Ready" / "I need help with my job search" | Skill 01: Interviewer |
-| "Write my resume" / "Update my cover letter" | Skill 02: Resume Writer |
-| "Find jobs for me" / "Review this job description" | Skill 03: Job Search Expert |
-| "I have an interview" / "Prep me for my interview" | Skill 04: Interview Prep |
-| "Mock interview" / "Practice with me" / "Interview me" / "Quiz me on the role" | Skill 05: Mock Interviewer |
-| "Show me my pipeline" / "Where am I with my applications" / "Add this to my tracker" | Skill 06: Pipeline Dashboard |
+| "Start Interview Ready" / "I need help with my job search" | Interviewer |
+| "Write my resume" / "Update my cover letter" | Resume Writer |
+| "Find jobs for me" / "Review this job description" | Job Search Expert |
+| "I have an interview" / "Prep me for my interview" | Interview Prep |
+| "Mock interview" / "Practice with me" / "Interview me" / "Quiz me on the role" | Mock Interviewer |
+| "Show me my pipeline" / "Where am I with my applications" / "Add this to my tracker" | Pipeline Dashboard |
 
 ---
 
@@ -135,17 +135,17 @@ You can also go directly to any skill:
 
 Interview Ready can connect to your email, cloud storage, and calendar through Claude's connected apps to make the workflow significantly more useful. These are optional: everything works without them.
 
-During onboarding (Skill 01), you will be asked whether you want to enable any of the following:
+During onboarding (Interviewer), you will be asked whether you want to enable any of the following:
 
 | Service | What it enables |
 |---|---|
-| Gmail or Microsoft Outlook | Skill 06 checks your inbox for recruiter responses before showing your pipeline. Status reflects what actually happened, not just what you manually logged. |
-| Google Drive, OneDrive, SharePoint, Dropbox, Box | Skill 02 and Skill 03 can pull your resume or job descriptions directly from storage without requiring a file upload each time. |
-| Google Calendar or Outlook Calendar | Skill 06 can read scheduled interview dates from your calendar and surface them in the pipeline view automatically. |
+| Gmail or Microsoft Outlook | Pipeline Dashboard checks your inbox for recruiter responses before showing your pipeline. Status reflects what actually happened, not just what you manually logged. |
+| Google Drive, OneDrive, SharePoint, Dropbox, Box | Resume Writer and Job Search Expert can pull your resume or job descriptions directly from storage without requiring a file upload each time. |
+| Google Calendar or Outlook Calendar | Pipeline Dashboard can read scheduled interview dates from your calendar and surface them in the pipeline view automatically. |
 
-To connect a service, go to Claude settings and enable the relevant connector under Connected Apps before starting your Interview Ready session. You can add connectors at any time: if you connect email after your initial onboarding, tell Skill 01 during your next session and it will update your profile.
+To connect a service, go to Claude settings and enable the relevant connector under Connected Apps before starting your Interview Ready session. You can add connectors at any time: if you connect email after your initial onboarding, tell the Interviewer skill during your next session and it will update your profile.
 
-**Recruiter email addresses** are the key to inbox checking. When you run prep for any role (Skill 04), you will be prompted to share the recruiter's email if you have it. Once stored in your profile, Skill 06 uses it to find the right email thread when checking your pipeline status.
+**Recruiter email addresses** are the key to inbox checking. When you run prep for any role (Interview Prep), you will be prompted to share the recruiter's email if you have it. Once stored in your profile, Pipeline Dashboard uses it to find the right email thread when checking your pipeline status.
 
 ---
 
@@ -163,7 +163,7 @@ The skills do not require any specific cloud service. Whatever document source y
 
 ## How Context Works
 
-The user profile built in Skill 01 carries forward into every other skill automatically. Skills pull only the slice of context they need: you are never re-asked for information you already provided.
+The user profile built in the Interviewer skill carries forward into every other skill automatically. Skills pull only the slice of context they need: you are never re-asked for information you already provided.
 
 **Session-persistent (default):** The profile lives in the active conversation. No file is written unless you request it. If you close the session, the profile does not carry over automatically.
 
@@ -177,19 +177,19 @@ The user profile built in Skill 01 carries forward into every other skill automa
 
 | Document | Skill | Format |
 |---|---|---|
-| Resume | Skill 02 | .docx (primary), PDF or plain text on request |
-| Resume Before and After | Skill 02 | .html (on request after rewrite) |
-| Cover Letter | Skill 02 | .docx (primary) |
-| Recruiter Screen Prep Guide | Skill 04 | .docx |
-| Hiring Manager Prep Guide | Skill 04 | .docx |
-| Panel Interview Prep Guide | Skill 04 | .docx |
-| Final Round Prep Guide | Skill 04 | .docx |
-| Offer Negotiation Guide | Skill 04 | .docx |
-| Compensation Analysis Report | Skill 04 | .html (on request after benchmarking) |
-| Reference Preparation Guide | Skill 04 | Inline guidance, reference list template |
-| Follow-Up Cadence Guide | Skill 04 | Inline guidance, email templates by stage |
-| Resignation Handling Guide | Skill 04 | Inline guidance, resignation letter template |
-| Pipeline Dashboard | Skill 06 | .html (on request, generated once per session) |
+| Resume | Resume Writer | .docx (primary), PDF or plain text on request |
+| Resume Before and After | Resume Writer | .html (on request after rewrite) |
+| Cover Letter | Resume Writer | .docx (primary) |
+| Recruiter Screen Prep Guide | Interview Prep | .docx |
+| Hiring Manager Prep Guide | Interview Prep | .docx |
+| Panel Interview Prep Guide | Interview Prep | .docx |
+| Final Round Prep Guide | Interview Prep | .docx |
+| Offer Negotiation Guide | Interview Prep | .docx |
+| Compensation Analysis Report | Interview Prep | .html (on request after benchmarking) |
+| Reference Preparation Guide | Interview Prep | Inline guidance, reference list template |
+| Follow-Up Cadence Guide | Interview Prep | Inline guidance, email templates by stage |
+| Resignation Handling Guide | Interview Prep | Inline guidance, resignation letter template |
+| Pipeline Dashboard | Pipeline Dashboard | .html (on request, generated once per session) |
 
 ---
 
@@ -201,7 +201,7 @@ Interview Ready is provided for informational purposes only and does not constit
 
 ## A Note on Salary Law Intelligence
 
-Skill 04 includes a live salary law search that runs on first use and refreshes automatically every 90 days (one US fiscal quarter). When you reach the compensation section of any recruiter screen prep, the skill searches for current salary history and expectation ban laws in your state and city, summarizes what applies to you, and cites the source.
+Interview Prep includes a live salary law search that runs on first use and refreshes automatically every 90 days (one US fiscal quarter). When you reach the compensation section of any recruiter screen prep, the skill searches for current salary history and expectation ban laws in your state and city, summarizes what applies to you, and cites the source.
 
 This search is live, not static. The skill does not rely on a fixed list that ages out. It pulls current information, stores the result in your profile, and tells you when it will refresh next.
 
@@ -231,14 +231,14 @@ Interview Ready is designed to be used across multiple sessions, not in one sitt
 
 | Stage | Estimated Tokens |
 |---|---|
-| Skill 01: Intake and profile build | 2,000 to 4,000 |
-| Skill 02: Resume rewrite and cover letter | 8,000 to 15,000 |
-| Skill 03: Single JD evaluation | 3,000 to 5,000 |
-| Skill 03: Bulk JD review (5 JDs) | 10,000 to 15,000 |
-| Skill 04: Single stage prep document | 8,000 to 12,000 |
-| Skill 05: Standard practice session | 4,000 to 8,000 |
-| Skill 05: Deep simulation session | 6,000 to 12,000 |
-| Skill 06: Pipeline dashboard and updates | 1,000 to 2,000 |
+| Interviewer: Intake and profile build | 2,000 to 4,000 |
+| Resume Writer: Resume rewrite and cover letter | 8,000 to 15,000 |
+| Job Search Expert: Single JD evaluation | 3,000 to 5,000 |
+| Job Search Expert: Bulk JD review (5 JDs) | 10,000 to 15,000 |
+| Interview Prep: Single stage prep document | 8,000 to 12,000 |
+| Mock Interviewer: Standard practice session | 4,000 to 8,000 |
+| Mock Interviewer: Deep simulation session | 6,000 to 12,000 |
+| Pipeline Dashboard: Dashboard and updates | 1,000 to 2,000 |
 
 **Full pipeline estimate:** A complete end-to-end run covering intake, resume, one JD evaluation, recruiter screen prep, hiring manager prep, and a mock interview session consumes roughly 35,000 to 55,000 tokens. Running this in one session is possible but not recommended.
 
@@ -248,15 +248,15 @@ Run one skill per session. Save your profile at the end of every session by sayi
 
 Suggested session breakdown:
 
-Session 1: Skill 01 intake and profile build. Save profile.
+Session 1: Interviewer intake and profile build. Save profile.
 
-Session 2: Skill 02 resume and cover letter. Save profile.
+Session 2: Resume Writer: resume and cover letter. Save profile.
 
-Session 3: Skill 03 job search and JD evaluation for your top roles. Save profile.
+Session 3: Job Search Expert: job search and JD evaluation for your top roles. Save profile.
 
-Session 4: Skill 04 recruiter screen prep for your priority role. Mock interview. Save profile.
+Session 4: Interview Prep: recruiter screen prep for your priority role. Mock Interviewer: practice session. Save profile.
 
-Session 5: Skill 04 hiring manager prep when the screen goes well. Save profile.
+Session 5: Interview Prep: hiring manager prep when the screen goes well. Save profile.
 
 Continue as needed through panel, final round, and offer negotiation.
 
@@ -325,7 +325,7 @@ Claude will read your profile and summarize where you stand across every pipelin
 
 **Compensation research**
 
-When preparing for offer negotiation, Skill 04 automatically searches these sources and synthesizes them into a base, bonus, equity, and total compensation range for your specific role, level, and location. These sources are also listed so you can cross-reference independently.
+When preparing for offer negotiation, Interview Prep automatically searches these sources and synthesizes them into a base, bonus, equity, and total compensation range for your specific role, level, and location. These sources are also listed so you can cross-reference independently.
 
 | Source | Best For |
 |---|---|
@@ -340,7 +340,7 @@ When preparing for offer negotiation, Skill 04 automatically searches these sour
 
 **Salary law research**
 
-Skill 04 also searches these authoritative sources for salary history and expectation ban laws in your jurisdiction before every recruiter screen prep. The result is cached and refreshed every 90 days automatically.
+Interview Prep also searches these authoritative sources for salary history and expectation ban laws in your jurisdiction before every recruiter screen prep. The result is cached and refreshed every 90 days automatically.
 
 | Source | Coverage |
 |---|---|
