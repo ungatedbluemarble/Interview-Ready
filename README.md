@@ -14,6 +14,12 @@ Every output is grounded in actual company research and your real background. Th
 
 ---
 
+## Disclaimer
+
+Interview Ready is provided for informational purposes only and does not constitute legal, financial, or professional career advice. Compensation data, salary law guidance, and negotiation strategies are research aids, not legal or financial counsel. Use your own judgment and consult a qualified professional where appropriate.
+
+---
+
 ## The Five Skills
 
 | Skill | What It Does |
@@ -166,12 +172,6 @@ The user profile built in Skill 01 carries forward into every other skill automa
 | Panel Interview Prep Guide | Skill 04 | .docx |
 | Final Round Prep Guide | Skill 04 | .docx |
 | Offer Negotiation Guide | Skill 04 | .docx |
-
----
-
-## Disclaimer
-
-Interview Ready is provided for informational purposes only and does not constitute legal, financial, or professional career advice. Compensation data, salary law guidance, and negotiation strategies are research aids, not legal or financial counsel. Use your own judgment and consult a qualified professional where appropriate.
 
 ---
 
