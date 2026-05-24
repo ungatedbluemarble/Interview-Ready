@@ -301,7 +301,7 @@ Say "save my profile" before the session ends. Upload the saved file in a new se
 
 ## Contributing
 
-Pull requests welcome. If you extend this package for a specific industry, role type, or platform (Gemini, etc.), open a PR with your additions and a note on what changed and why.
+Pull requests welcome. If you extend this package for a specific industry, role type, or additional platform support, open a PR with your additions and a note on what changed and why.
 
 ---
 
